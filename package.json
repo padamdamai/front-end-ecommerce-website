@@ -1,6 +1,7 @@
 {
   "name": "clz_project",
   "version": "0.1.0",
+  "homepage": "https://github.com/padamdamai/front-end-ecommerce-website",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -28,7 +29,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "serve-json": "json-server --watch ./src/components/curd_operation/db.json --port 5001"
+    "serve-json": "json-server --watch ./src/components/curd_operation/db.json --port 5001",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d  build"
+
   },
   "eslintConfig": {
     "extends": [
